@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>UNG Open Source Portal</title>
+	<meta charset = "utf-8"/>
+	<style>
+		body 
+		{
+			margin: 0;
+			font-family:"Arial";	
+		}
+		a 
+		{
+			text-decoration:none;
+		}
+		td 
+		{
+			padding-right: 10px;
+		}
+		#header 
+		{
+			color: white;
+			position: relative;
+			background-color: #002f87;
+			padding: 15px 15px 15px 15px;
+		}
+		#table
+		{
+			padding-left:15px;
+		}
+		.link 
+		{
+			width: 25px;
+			height: 25px;
+			font-size: 18px;
+			padding: 5px 0px 5px 0px;
+			position: relative;
+		}
+	</style>
+</head>
+	<div id = "header">
+			<h1 id = "head">UNG Open Source Portal</h1>
+	</div></br>
+	<div id = "table">
+		<div class = "link"><a href = "./centos">Centos</a></div>
+		<div class = "link"><a href = "./debian">Debian</a></div>
+	</div>
+	<div id = "iframe-container">
+		
+	</div>
+	<script>
+		function loadIFrame(var type) {
+			var container = document.getElementById("#iframe-container")
+			if(type == "centos") {
+				container.innerHTML = "<iframe href = ./centos></iframe>"
+			}
+		}
+	</script>
+</html>
